@@ -1,16 +1,184 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Welcome to My CS180 Portfolio!</h1>
-    <a href="./1/index.html">Project 1</a>
-</body>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CS180 Computer Vision Portfolio</title>
+        <style>
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                color: #400a01;
+                margin: 0;
+                padding: 0;
+                background-color: #ffffff;
+            }
+            .container {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 40px 20px;
+            }
+            header {
+                text-align: center;
+                margin-bottom: 50px;
+                background-color: #8b0000;
+                padding: 40px 0;
+                color: #fff;
+                border-radius: 5px;
+            }
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 10px;
+            }
+            .subtitle {
+                font-size: 1.2rem;
+                opacity: 0.8;
+                margin-top: 0;
+            }
+            .course-info {
+                background-color: #ffb6c1;
+                color: white;
+                display: inline-block;
+                padding: 5px 15px;
+                border-radius: 20px;
+                font-size: 0.9rem;
+            }
+            .projects {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 30px;
+                margin-top: 40px;
+            }
+            .project-card {
+                background-color: white;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 5px 15px rgba(139, 0, 0, 0.1);
+                transition:
+                    transform 0.3s,
+                    box-shadow 0.3s;
+            }
+            .project-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 30px rgba(139, 0, 0, 0.2);
+            }
+            .project-image {
+                height: 200px;
+                background-color: #ffcccb;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+            }
+            .project-image.proj0 {
+                background-image: url("1/media/IMG_0582.HEIC");
+            }
+            .project-number {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: #bc1a1a;
+                color: white;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+            }
+            .project-content {
+                padding: 20px;
+            }
+            .project-title {
+                margin-top: 0;
+                color: #400a01;
+                font-size: 1.4rem;
+            }
+            .project-desc {
+                color: #9d0208;
+                font-size: 0.95rem;
+                margin-bottom: 20px;
+            }
+            .project-link {
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                background-color: #9d0208;
+                padding: 8px 20px;
+                border-radius: 4px;
+                font-weight: bold;
+                transition: background-color 0.2s;
+            }
+            .project-link:hover {
+                background-color: #d00000;
+            }
+            footer {
+                margin-top: 60px;
+                text-align: center;
+                color: #800000;
+                font-size: 0.9rem;
+            }
+            .about-section {
+                background-color: white;
+                padding: 30px;
+                border-radius: 8px;
+                margin-bottom: 40px;
+                box-shadow: 0 2px 10px rgba(139, 0, 0, 0.1);
+            }
+            h2 {
+                color: #8b0000;
+                border-bottom: 2px solid #e63946;
+                padding-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>CS180 Computer Vision Portfolio</h1>
+                <p class="subtitle">Haojun Ma</p>
+                <div class="course-info">UC Berkeley - Fall 2025</div>
+            </header>
+
+            <section class="about-section">
+                <h2>About This Portfolio</h2>
+                <p>
+                    Welcome to my CS180 portfolio! This site showcases my
+                    projects for CS180: Introduction to Computer Vision and
+                    Computational Photography at UC Berkeley 2025 fall.
+                </p>
+                <p>Feel free to explore the projects below!</p>
+            </section>
+
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-image proj0">
+                        <div class="project-number">0</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">
+                            Becoming Friends with Your Camera
+                        </h3>
+                        <p class="project-desc">
+                            get some intuitive understanding of the somewhat
+                            subtle relationship between perspective, focal
+                            length/zoom, and the center of projection.
+                        </p>
+                        <a href="./1/index.html" class="project-link"
+                            >View Project</a
+                        >
+                    </div>
+                </div>
+
+                <!-- Additional project cards will be added here as the semester progresses -->
+            </div>
+
+            <footer>
+                <p>
+                    &copy; 2025 | CS180: Introduction to Computer Vision and
+                    Computational Photography
+                </p>
+            </footer>
+        </div>
+    </body>
 </html>

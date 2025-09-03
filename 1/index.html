@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Project 1</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 20px;
+                color: #400a01;
+                text-align: center;
+                background-color: #ffffff;
+            }
+            h1 {
+                color: #8b0000;
+                border-bottom: 2px solid #e63946;
+                padding-bottom: 10px;
+                margin-top: 40px;
+            }
+            h2 {
+                color: #bc1a1a;
+                margin-top: 30px;
+            }
+            .photo-container {
+                margin: 30px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .photo-pair {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                margin-bottom: 20px;
+            }
+            .photo-item {
+                max-width: 200px;
+                text-align: center;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px rgba(139, 0, 0, 0.1);
+            }
+            .caption {
+                margin-top: 10px;
+                font-style: italic;
+                color: #800000;
+            }
+            .description {
+                margin: 20px 0;
+                background-color: #ffebeb;
+                padding: 20px;
+                border-radius: 5px;
+                border-left: 5px solid #e63946;
+                text-align: left;
+                max-width: 90%;
+            }
+            .home-link {
+                display: inline-block;
+                margin-top: 40px;
+                background-color: #d00000;
+                color: white;
+                padding: 10px 15px;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .home-link:hover {
+                background-color: #9d0208;
+            }
+            .gif-container {
+                text-align: center;
+                margin: 30px 0;
+            }
+            .gif-container img {
+                max-width: 600px;
+                margin: 0 auto;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Project 0: Becoming Friends with Your Camera</h1>
+
+        <section id="part1">
+            <h2>Part 1: Selfie: The Wrong Way vs. The Right Way</h2>
+
+            <div class="description">
+                <p>
+                    In this part are several pics of me taken with different focus and distances.
+                </p>
+            </div>
+
+            <div class="photo-container">
+                <div class="photo-pair">
+                    <div class="photo-item">
+                        <img src="media/IMG_1.png" />
+                        <p class="caption">The closest(most strange) one</p>
+                    </div>
+                    <div class="photo-item">
+                        <img src="media/IMG_2.png" />
+                        <p class="caption">
+                            a little bit farther and muuuuuuuch better one!
+                        </p>
+                    </div>
+                    <div class="photo-item">
+                        <img src="media/IMG_3.png" />
+                        <p class="caption">farther and better</p>
+                    </div>
+                    <div class="photo-item">
+                        <img src="media/IMG_4.png" />
+                        <p class="caption">farther and almost the same</p>
+                    </div>
+                    <div class="photo-item">
+                        <img src="media/IMG_5.png" />
+                        <p class="caption">The farthest one</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="part2">
+            <h2>Part 2: Architectural Perspective Compression</h2>
+
+            <div class="description">
+                <p>
+                    Here are 2 sets of photos showing different perspectives of the same scene.
+                </p>
+            </div>
+
+            <div class="photo-container">
+                <div class="photo-pair">
+                    <div class="photo-item">
+                        <img
+                            src="media/IMG_6.png"
+                            alt="Zoomed-in street scene"
+                        />
+                        <p class="caption">shot from farther away</p>
+                    </div>
+                    <div class="photo-item">
+                        <img
+                            src="media/IMG_7.png"
+                            alt="Normal perspective street scene"
+                        />
+                        <p class="caption">shot from closer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-container">
+                <div class="photo-pair">
+                    <div class="photo-item">
+                        <img
+                            src="media/IMG_8.png"
+                            alt="Zoomed-in street scene"
+                        />
+                        <p class="caption">shot from farther away</p>
+                    </div>
+                    <div class="photo-item">
+                        <img
+                            src="media/IMG_9.png"
+                            alt="Normal perspective street scene"
+                        />
+                        <p class="caption">shot from closer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="part3">
+            <h2>Part 3: The Dolly Zoom</h2>
+
+            <div class="description">
+                <p>
+                    This is the gif of the dolly zoom effect, which contains 6 pics taken from different distances with me in the middle.
+                </p>
+            </div>
+
+            <div class="gif-container">
+                <img
+                    src="media/IMG_0602.GIF"
+                    alt="Dolly Zoom Effect Animation"
+                />
+                <p class="caption">
+                    The Dolly Zoom Effect: Moving backwards while zooming in
+                </p>
+
+        </section>
+
+        <a href="../index.html" class="home-link">← Back to Portfolio</a>
+    </body>
+</html>
